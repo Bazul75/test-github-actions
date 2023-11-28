@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install_Node
-        uses: Bazul75/nvm-node-composite-action@v1c
+        uses: Bazul75/nvm-node-composite-action@v1
         with:
           node-version: '14'
       - name: Install_Dependencies
