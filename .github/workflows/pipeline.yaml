@@ -17,6 +17,8 @@ jobs:
         uses: Bazul75/nvm-node-composite-action@v1
         with:
           node-version: '14'
+      - name: Verify Node Version
+        run: node -v
       - name: Install_Dependencies
         run: npm install
       - name: Build
