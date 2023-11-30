@@ -20,7 +20,7 @@ jobs:
       - name: Verify Node Version
         run: node -v
       - name: Install_Dependencies
-        run: npm install
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Upload Artifact
@@ -41,6 +41,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Install_Dependencies
+        run: npm ci
       - name: Downoload Artifact
         uses: actions/download-artifact@v2
         with:
