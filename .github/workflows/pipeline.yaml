@@ -37,6 +37,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '14'
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Downoload Artifact
         uses: actions/download-artifact@v2
         with:
